@@ -1,4 +1,4 @@
-# Bevo-s-Bazaar
+# Bevo's Bazaar
 An auction service written using JavaFX which supports multiple clients.
 
 ## Programmer's Perspective
