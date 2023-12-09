@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="897.0" prefWidth="1050.0" style="-fx-background-color: #fdf5e6;" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.AppController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="113.0" prefWidth="1050.0" text="Bevo's Bazaar" textAlignment="CENTER">
+         <font>
+            <Font name="Malgun Gothic Bold" size="48.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutY="113.0" prefHeight="784.0" prefWidth="1050.0" style="-fx-background-color: #fdf5e6;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="772.0" prefWidth="1044.0" style="-fx-background-color: #fdf5e6;">
+               <children>
+                  <GridPane fx:id="gridPane" layoutX="3.0" layoutY="22.0" prefHeight="767.0" prefWidth="1024.0" style="-fx-background-color: #fdf5e6;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <AnchorPane layoutX="7.0" layoutY="116.0" prefHeight="40.0" prefWidth="1036.0">
+         <children>
+            <SplitMenuButton layoutX="935.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Menu">
+              <items>
+                  <MenuItem fx:id="pauseUnpause" mnemonicParsing="false" onAction="#pauseUnpause" text="Pause Music" />
+                <MenuItem fx:id="history" mnemonicParsing="false" onAction="#getHistory" text="Purchases" />
+                <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Logout" />
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeWindow" text="Close" />
+              </items>
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="12.0" />
+               </font>
+            </SplitMenuButton>
+            <Text fx:id="welcome" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome " wrappingWidth="188.62255859375">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="errorOut" fill="RED" layoutX="336.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="363.6767578125">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
