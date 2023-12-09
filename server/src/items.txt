@@ -1,0 +1,15 @@
+Dog,40,500,100,A small corgi.
+Cat,30,350,100,A skinny tabby cat.
+Rabbit,35,400,100,An adorable hopper.
+Goat,60,900,200,An avid grazer.
+Fish,15,200,200,A beta fish.
+Turtle,20,250,200,A common musk turtle.
+Hedgehog,45,700,200,Adorable ball of spikes.
+Chameleon,55,900,300,A color changing master.
+Axolotl,50,750,300,A truly unique pet.
+Snake,50,750,300,Completely harmless... kind of.
+Monkey,160,5000,500,A great companion.
+Llama,120,2500,500,What is this doing here?
+Horse,150,3000,500,A noble steed.
+Parakeet,50,750,500,A colorful communicator.
+Koala,65,1000,500,Lover of eucalyptus.
